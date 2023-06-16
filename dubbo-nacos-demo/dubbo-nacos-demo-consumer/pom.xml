@@ -6,7 +6,7 @@
     <parent>
         <groupId>cn.yt4j</groupId>
         <artifactId>dubbo-nacos-demo</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>dubbo-nacos-demo-consumer</artifactId>

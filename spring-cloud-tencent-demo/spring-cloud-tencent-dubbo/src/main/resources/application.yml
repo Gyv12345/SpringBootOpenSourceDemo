@@ -1,0 +1,20 @@
+server:
+  port: 11000
+spring:
+  cloud:
+    polaris:
+      address: grpc://127.0.0.1:8091
+  application:
+    name: @artifactId@
+  config:
+    import:
+      - optional:pro:${spring.application.name}.yml
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://${spring.cloud.nacos.discovery.server-addr}

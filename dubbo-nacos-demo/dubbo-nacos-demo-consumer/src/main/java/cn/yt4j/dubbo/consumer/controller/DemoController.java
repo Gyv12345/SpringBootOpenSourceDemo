@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("demo")
 public class DemoController {
-    @DubboReference
-    private DemoApiService demoApiService;
 
-    @GetMapping("test")
-    public String test(){
-        return demoApiService.sayHi("ddd");
-    }
+	@DubboReference
+	private DemoApiService demoApiService;
+
+	@GetMapping("test")
+	public String test() {
+		return demoApiService.sayHi("ddd");
+	}
+
 }

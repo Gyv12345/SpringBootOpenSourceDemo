@@ -10,8 +10,10 @@ import org.springframework.stereotype.Service;
 @Service
 @DubboService
 public class DemoApiServiceImpl implements DemoApiService {
-    @Override
-    public String sayHi(String flow) {
-        return "123456";
-    }
+
+	@Override
+	public String sayHi(String flow) {
+		return "123456";
+	}
+
 }

@@ -5,6 +5,7 @@ import java.util.Queue;
 
 /**
  * 滑动窗口示例
+ *
  * @author shichenyang
  */
 public class SlidingWindowRateLimiter {
@@ -35,13 +36,13 @@ public class SlidingWindowRateLimiter {
 
 		// 判断当前窗口内的请求数是否超过限制
 		if (requestTimestamps.size() < maxRequests) {
-            // 记录当前请求
+			// 记录当前请求
 			requestTimestamps.offer(currentTimeMillis);
-            // 允许请求
+			// 允许请求
 			return true;
 		}
 		else {
-            // 拒绝请求
+			// 拒绝请求
 			return false;
 		}
 	}

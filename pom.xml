@@ -12,6 +12,7 @@
         <module>dubbo-nacos-demo</module>
         <module>spring-cloud-tencent-demo</module>
         <module>liteflow-demo</module>
+        <module>design-patterns</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
